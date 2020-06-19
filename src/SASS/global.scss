@@ -1,0 +1,39 @@
+/* 
+  font-family: 'Montserrat', sans-serif; // regular 400 italic and bold
+  font-family: 'MuseoModerno', cursive; // Extra-light 200
+  font-family: 'Roboto Mono', monospace; // regular 400
+*/
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  color:#fff;  
+}
+
+.App {    
+    background-color:#000;
+    height:100vh;   
+    width:100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+  & > div {
+    width:100%;
+    height:100%;
+  }
+
+    .intro {
+      grid-column: 1 /span 3;
+    }
+
+    
+}
+
+h1, h2, h3 {
+  color:#fff;
+  font-family: 'MuseoModerno', cursive;
+  font-weight:200;
+}
+
