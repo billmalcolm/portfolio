@@ -1,3 +1,6 @@
+## Deploys to Github Pages
+Project is configured to deploy to Github Pages at https://billmalcolm.github.io/portfolio/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
