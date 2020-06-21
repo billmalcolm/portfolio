@@ -1,28 +1,35 @@
-import React from 'react';
-import { Switch, Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import '../SASS/navigation.scss';
+// import rocket from '../images/rocket.png';
 
-function Navigation() {
+function Navigation(props) {
+
+
+
 
     return (
-        <div className="navigation" role="navigation">
-
-            <div className="marker alfa">
-                <Link to="/portfolio/projects">
-                    Projects:<br /> things I've done
+        <header>
+            <button className={"navToggle " + props.btnText} onClick={() => props.handleMenu()}>{props.btnText}</button>
+            <div className={"navigation " + props.navState} role="navigation">
+                <div className="marker alfa">
+                    <Link to="/portfolio/projects" onClick={() => props.handleMenu()}>
+                        Projects: Things I've done
                     </Link>
-            </div>
-            <div className="marker bravo">
-                <Link to="/portfolio/skills">
-                    Skills: <br />things I can do
+                </div>
+                <div className="marker bravo">
+                    <Link to="/portfolio/skills" onClick={() => props.handleMenu()}>
+                        Skills: Things I can do
                 </Link>
-            </div>
-            <div className="marker charlie">
-                <Link to="/portfolio/dossier">
-                    Dossier:<br /> Who I am
+                </div>
+                <div className="marker charlie">
+                    <Link to="/portfolio/dossier" onClick={() => props.handleMenu()}>
+                        Dossier: Who I am
                 </Link>
-            </div>
-        </div>
+                </div>
+            </div >
+        </header>
+
     )
 }
 

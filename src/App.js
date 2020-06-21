@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  useRouteMatch
+  Link
 } from 'react-router-dom';
 
 import Home from './Components/Home.js';
@@ -15,18 +15,42 @@ import Navigation from './Components/Navigation.js';
 import './SASS/global.scss';
 
 
-
-
 function App() {
 
+
+  const [navState, openNav] = useState("closed");
+  const [btnText, changeText] = useState("Launch");
+  const [launches, tickLaunch] = useState(0);
+
+  function handleMenu() {
+    tickLaunch(launches + 1);
+
+    if (navState === "open") {
+      openNav('closed');
+      changeText('Launch');
+    } else {
+      openNav('open');
+      changeText('Return');
+
+    }
+  }
 
   return (
     <div className="App">
       <Router>
+        <Switch>
+          <Route path="/" render={(props) => (
+            <Navigation {...props} navState={navState} btnText={btnText} handleMenu={handleMenu} />
+          )}>
+          </Route>
+        </Switch>
         <div className="intro">
+
           <Switch>
-            <Route exact path="/portfolio" >
-              <Home />
+            <Route exact path="/portfolio" render={(props) => (
+              <Home {...props} launches={launches} />
+            )}>
+
             </Route>
             <Route exact path="/portfolio/dossier">
               <Dossier />
@@ -39,7 +63,7 @@ function App() {
             </Route>
           </Switch>
         </div>
-        <Navigation />
+
       </Router>
     </div>
   );
