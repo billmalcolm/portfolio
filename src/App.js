@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import {
-  BrowserRouter,
+  BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Link
 } from 'react-router-dom';
 
 import Home from './Components/Home.js';
@@ -34,34 +35,40 @@ function App() {
     }
   }
 
+  const devURL = '/';
+  const ProdURL = process.env.PUBLIC_URL + '/portfolio/';
+  const baseURL = devURL;
+
   return (
     <div className="App">
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Router>
         <Switch>
-          <Route path="/" render={(props) => (
+          <Route path={baseURL} render={(props) => (
             <Navigation {...props} navState={navState} btnText={btnText} handleMenu={handleMenu} />
           )}>
           </Route>
         </Switch>
         <div className="intro">
+
           <Switch>
-            <Route exact path="/" render={(props) => (
+            <Route exact path={baseURL} render={(props) => (
               <Home {...props} launches={launches} />
             )}>
 
             </Route>
-            <Route exact path="/dossier">
+            <Route path={baseURL + "dossier"}>
               <Dossier />
             </Route>
-            <Route exact path="/projects">
+            <Route path={baseURL + "projects"}>
               <Projects />
             </Route>
-            <Route exact path="/skills">
+            <Route path={baseURL + "skills"}>
               <Skills />
             </Route>
           </Switch>
         </div>
-      </BrowserRouter>
+
+      </Router>
     </div>
   );
 }
