@@ -41,7 +41,8 @@ function App() {
   // Switch these when deploying
   const baseURL = process.env.PUBLIC_URL + '/';
 
-  console.log('test track 3');
+  console.log('test track 4');
+  console.log(baseURL);
 
   return (
     <div className="App">
