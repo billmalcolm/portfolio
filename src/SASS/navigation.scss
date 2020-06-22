@@ -37,7 +37,6 @@ header {
         height: 405px;
         transition: 0.3s all;
         z-index: 2;
-        overflow-x: hidden;
 
         &.open {
             transform: translateX(-40px);
