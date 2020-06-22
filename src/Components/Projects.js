@@ -12,7 +12,7 @@ function Projects() {
     return (
         <div className="projects interior">
 
-            <Link to="/portfolio" className="goBack">
+            <Link to="/" className="goBack">
                 <i className="fa fa-home"></i>
             </Link>
             <h2>Things I've Done</h2>

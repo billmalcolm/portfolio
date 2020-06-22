@@ -11,7 +11,7 @@ import '../SASS/skills.scss';
 function Skills() {
     return (
         <div className="skills interior">
-            <Link to="/portfolio" className="goBack">
+            <Link to="/" className="goBack">
                 <i className="fa fa-home"></i>
             </Link>
             <h2>Things I Can Do</h2>
