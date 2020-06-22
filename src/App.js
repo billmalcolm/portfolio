@@ -41,6 +41,7 @@ function App() {
   // Switch these when deploying
   const baseURL = process.env.PUBLIC_URL + '/';
 
+  console.log('test track 3');
 
   return (
     <div className="App">
@@ -62,7 +63,7 @@ function App() {
             <Route path={baseURL + "dossier"}>
               <Dossier />
             </Route>
-            <Route path={baseURL + "portfolio/projects"}>
+            <Route path={baseURL + "/portfolio/projects"}>
               <Projects />
             </Route>
             <Route path={baseURL + "skills"}>
