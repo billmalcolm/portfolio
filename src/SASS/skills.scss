@@ -1,3 +1,19 @@
-.skills.interior {
+.skills {
     width: 100%;
+
+    .skill {
+        img {
+            width: 50px;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            margin-bottom: 10px;
+
+            li {
+                margin-right: 15px;
+            }
+        }
+    }
 }

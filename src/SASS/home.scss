@@ -7,7 +7,13 @@
 }
 
 .home {
-    margin-bottom: 50px;
+    .intro {
+        height: calc(100vh - 80px);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
 
     h1,
     h2,
@@ -15,9 +21,8 @@
         text-align: center;
     }
 
-    p {
-        font-size: 14px;
-        line-height: 14px;
-        font-style: italic;
+    h1 {
+        font-size: 48px;
+        line-height: 48px;
     }
 }

@@ -11,11 +11,10 @@ function Home(props) {
 
     return (
         <div className={playDone + " home " + playIt}>
-
-            <h1>Bill Malcolm</h1>
-            <h2>Front-end Developer</h2>
-            <p>(But clearly, not a Designer)</p>
-
+            <div class="intro">
+                <h1>Bill Malcolm</h1>
+                <h2>Front-end Developer</h2>
+            </div>
         </div>
     )
 }

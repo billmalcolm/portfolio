@@ -13,7 +13,7 @@ import shift6 from './../images/shift6-site.png';
 
 function Projects() {
     return (
-        <div className="projects interior">
+        <div className="projects shade">
 
             <ReturnHome />
             <h2>Things I've Done</h2>

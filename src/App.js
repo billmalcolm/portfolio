@@ -37,7 +37,10 @@ function App() {
 
   const devURL = '/';
   const ProdURL = process.env.PUBLIC_URL + '/portfolio/';
-  const baseURL = devURL;
+
+  // Switch these when deploying
+  const baseURL = ProdURL;
+
 
   return (
     <div className="App">
@@ -48,7 +51,7 @@ function App() {
           )}>
           </Route>
         </Switch>
-        <div className="intro">
+        <div className="interior">
 
           <Switch>
             <Route exact path={baseURL} render={(props) => (
