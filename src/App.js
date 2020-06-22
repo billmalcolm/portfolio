@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
   Link
@@ -35,7 +35,7 @@ function App() {
     }
   }
 
-  console.log('test track 8');
+  console.log('test track 9');
 
   return (
     <div className="App">
