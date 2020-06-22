@@ -62,7 +62,7 @@ function App() {
             <Route path={baseURL + "dossier"}>
               <Dossier />
             </Route>
-            <Route path={baseURL + "projects"}>
+            <Route path={baseURL + "portfolio/projects"}>
               <Projects />
             </Route>
             <Route path={baseURL + "skills"}>
