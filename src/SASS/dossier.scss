@@ -6,6 +6,8 @@
 
         img {
             margin-right: 30px;
+            display: block;
+            align-self: flex-start;
         }
 
         ul {
@@ -16,6 +18,10 @@
                 color: green;
                 font-size: 20px;
                 margin-bottom: 20px;
+
+                @media screen and (max-width: 700px) {
+                    font-size: 16px;
+                }
             }
         }
     }
