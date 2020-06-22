@@ -54,13 +54,13 @@ function App() {
             )}>
 
             </Route>
-            <Route path={baseURL + "dossier"}>
+            <Route path="dossier">
               <Dossier />
             </Route>
-            <Route path="/projects">
+            <Route path="projects">
               <Projects />
             </Route>
-            <Route path={baseURL + "skills"}>
+            <Route path="skills">
               <Skills />
             </Route>
           </Switch>
