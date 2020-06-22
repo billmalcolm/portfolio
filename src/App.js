@@ -35,7 +35,7 @@ function App() {
     }
   }
 
-  console.log('test track 6');
+  console.log('test track 8');
 
   return (
     <div className="App">
@@ -49,18 +49,18 @@ function App() {
         <div className="interior">
 
           <Switch>
-            <Route path='/' render={(props) => (
+            <Route exact path='/' render={(props) => (
               <Home {...props} launches={launches} />
             )}>
 
             </Route>
-            <Route path="dossier">
+            <Route path="/dossier">
               <Dossier />
             </Route>
-            <Route path="projects">
+            <Route path="/projects">
               <Projects />
             </Route>
-            <Route path="skills">
+            <Route path="/skills">
               <Skills />
             </Route>
           </Switch>
