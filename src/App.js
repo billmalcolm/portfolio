@@ -35,17 +35,13 @@ function App() {
     }
   }
 
-
-  const baseURL = process.env.PUBLIC_URL + '/';
-
-  console.log('test track 5');
-  console.log(baseURL);
+  console.log('test track 6');
 
   return (
     <div className="App">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
-          <Route path={baseURL} render={(props) => (
+          <Route path='/' render={(props) => (
             <Navigation {...props} navState={navState} btnText={btnText} handleMenu={handleMenu} />
           )}>
           </Route>
@@ -53,7 +49,7 @@ function App() {
         <div className="interior">
 
           <Switch>
-            <Route exact path={baseURL} render={(props) => (
+            <Route path='/' render={(props) => (
               <Home {...props} launches={launches} />
             )}>
 
@@ -61,7 +57,7 @@ function App() {
             <Route path={baseURL + "dossier"}>
               <Dossier />
             </Route>
-            <Route path={baseURL + "/portfolio/projects"}>
+            <Route path="/projects">
               <Projects />
             </Route>
             <Route path={baseURL + "skills"}>
@@ -71,7 +67,7 @@ function App() {
         </div>
 
       </Router>
-    </div>
+    </div >
   );
 }
 
