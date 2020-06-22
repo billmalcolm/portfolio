@@ -25,16 +25,38 @@ function Skills() {
             </div>
 
             <div className="skill">
-                <h3>Libraries, Frameworks and Dev Tools</h3>
-                <p></p>
+                <h3>Other Skills</h3>
+                <p>This section includes libraries, frameworks, dev tools and anything else that I regularly use outside of the fundamentals. </p>
                 <ul>
                     <li>React</li>
+                    <li>SASS</li>
+                    <li>MJML</li>
+                    <li>jQuery</li>
+                    <li>Bootstrap</li>
+                    <li>Photoshop/GIMP</li>
+                    <li>Sketch</li>
                 </ul>
             </div>
 
-            {/* <p>
-                Iron rusts from disuse. So does a developer's skill in any given technology.
-            </p> */}
+            <div className="skill">
+                <h3>Getting Rusty</h3>
+                <p>
+                    Iron rusts from disuse. So does a developer's skill in any given technology.
+            </p>
+
+                <p>These are things that I was once proficient in, but like the proverbial iron, I have become a bit rusty with. I am a quick learner, though, so I am confident I could quickly get back up to speed in these.</p>
+
+                <ul>
+                    <li>Wordpress</li>
+                    <li>PHP</li>
+                    <li>MySQL</li>
+                    <li>Marketo/Eloqua</li>
+                    <li>Prototype.js</li>
+                    <li>Underscore.js</li>
+                    <li>TaffyDB</li>
+                </ul>
+            </div>
+
 
         </div>
     )

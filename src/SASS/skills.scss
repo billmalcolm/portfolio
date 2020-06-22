@@ -2,6 +2,8 @@
     width: 100%;
 
     .skill {
+        margin: 30px 0;
+
         img {
             width: 50px;
         }
@@ -9,10 +11,13 @@
         ul {
             list-style-type: none;
             display: flex;
-            margin-bottom: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
 
             li {
                 margin-right: 15px;
+                font-size: 16px;
+                font-family: "Roboto Mono", monospace;
             }
         }
     }

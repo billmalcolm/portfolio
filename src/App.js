@@ -35,7 +35,6 @@ function App() {
     }
   }
 
-  console.log('test track 9');
 
   return (
     <div className="App">
