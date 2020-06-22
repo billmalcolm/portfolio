@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function ReturnHome() {
     return (
-        <div className="go-home">
-            <Link to="/portfolio">
-                Go home
+        <div className="goBack">
+            <Link to="/">
+                <i className="fa fa-home"></i>
             </Link>
         </div>
     )

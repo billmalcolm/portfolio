@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+
+import ReturnHome from './ReturnHome';
 
 import '../SASS/projects.scss';
 
@@ -7,14 +8,14 @@ import oegSite from './../images/oeg-site.png';
 import gmrSite from './../images/gmr-site.png';
 import storySite from './../images/storyhouse-site.png';
 import cccySite from './../images/cccy-site.png';
+import shift6 from './../images/shift6-site.png';
+
 
 function Projects() {
     return (
         <div className="projects interior">
 
-            <Link to="/" className="goBack">
-                <i className="fa fa-home"></i>
-            </Link>
+            <ReturnHome />
             <h2>Things I've Done</h2>
             <p>I've done a whole lot more, but most of my projects tend to be short-lived promotional pieces and as a result, there isn't a lot of my work still on the web. I've built hundreds of sites over my career, and these were some that are still up. </p>
 
@@ -67,6 +68,18 @@ function Projects() {
                 <div className="project-info">
                     <h3><a href="https://comcastcommunitychampion.com/" target="_blank">Comcast Community Champion of the Year</a></h3>
                     <p>The Comcast Community Champion of the Year site honors NASCAR professionals who also work hard helping others in their community. This site was also built with React.js, but it was done so in Visual Studio with a C# back end. The videos were all hosted with AWS and feature some nice modal video players.   </p>
+                </div>
+
+            </div>
+            <div className="project">
+                <div className="project-image">
+                    <a href="https://www.shift6dev.com/" target="_blank">
+                        <img src={shift6} alt="Comcast Community Champion of the Year site" />
+                    </a>
+                </div>
+                <div className="project-info">
+                    <h3><a href="https://www.shift6dev.com/" target="_blank">Shift6 </a></h3>
+                    <p>The Shift6 site plays around with a dynamically generated background image in the header and angled section partitions. The alternating carousels were challenging but I learned a lot more about CSS Transforms and got pretty handy with them. The form is submitted with an AJAX call and is replaced with a "thank you" div. I still have love for Bootstrap, but I don't use it much, anymore.  Fun fact: I did a lot of the front end work on two of the products listed at the bottom, Nowpik and Orchestrate.  </p>
                 </div>
 
             </div>

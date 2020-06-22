@@ -1,19 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import ReturnHome from './ReturnHome.js';
 
 import htmlLogo from '../images/html5-logo.png';
 import cssLogo from '../images/css3-logo.png';
 import jsLogo from '../images/js-logo.png';
-
 
 import '../SASS/skills.scss';
 
 function Skills() {
     return (
         <div className="skills interior">
-            <Link to="/" className="goBack">
-                <i className="fa fa-home"></i>
-            </Link>
+            <ReturnHome />
             <h2>Things I Can Do</h2>
             <p>
                 Every time I think I've mastered a subject, I learn something new. <br />
@@ -23,7 +20,7 @@ function Skills() {
                 The following are technologies that I am always learning more about and trying to improve. <br />They make the list when I complete a project and continue to use them.
                 </p>
             <h3>Fundamentals</h3>
-            <div className="skill fundamental">
+            <div className="skill fundamentals">
                 <img src={htmlLogo} alt="HTML 5" />
                 <img src={cssLogo} alt="CSS 3" />
                 <img src={jsLogo} alt="Javascript" />

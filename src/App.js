@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import {
   BrowserRouter,
   Switch,
-  Route,
-  Link
+  Route
 } from 'react-router-dom';
 
 import Home from './Components/Home.js';
@@ -46,18 +45,18 @@ function App() {
         </Switch>
         <div className="intro">
           <Switch>
-            <Route exact path="/portfolio" render={(props) => (
+            <Route exact path="/" render={(props) => (
               <Home {...props} launches={launches} />
             )}>
 
             </Route>
-            <Route exact path="/portfolio/dossier">
+            <Route exact path="/dossier">
               <Dossier />
             </Route>
-            <Route exact path="/portfolio/projects">
+            <Route exact path="/projects">
               <Projects />
             </Route>
-            <Route exact path="/portfolio/skills">
+            <Route exact path="/skills">
               <Skills />
             </Route>
           </Switch>
