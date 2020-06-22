@@ -6,14 +6,14 @@ import '../SASS/navigation.scss';
 function Navigation(props) {
 
 
-
+    const baseURL = process.env.PUBLIC_URL + '/';
 
     return (
         <header>
             <button className={"navToggle " + props.btnText} onClick={() => props.handleMenu()}>{props.btnText}</button>
             <div className={"navigation " + props.navState} role="navigation">
                 <div className="marker alfa">
-                    <Link to="/projects" onClick={() => props.handleMenu()}>
+                    <Link to={process.env.PUBLIC_URL + "/projects"} onClick={() => props.handleMenu()}>
                         Projects: Things I've done
                     </Link>
                 </div>

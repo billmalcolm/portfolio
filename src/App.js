@@ -35,13 +35,10 @@ function App() {
     }
   }
 
-  const devURL = '/';
-  const ProdURL = process.env.PUBLIC_URL + 'portfolio/';
 
-  // Switch these when deploying
   const baseURL = process.env.PUBLIC_URL + '/';
 
-  console.log('test track 4');
+  console.log('test track 5');
   console.log(baseURL);
 
   return (
