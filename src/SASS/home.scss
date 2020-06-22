@@ -1,11 +1,5 @@
 @import "home-animation";
 
-@media screen and (max-width: 590px) {
-    .home {
-        margin-top: 350px;
-    }
-}
-
 .home {
     .intro {
         height: calc(100vh - 80px);
