@@ -30,6 +30,7 @@ function Skills() {
                 <ul>
                     <li>React</li>
                     <li>SASS</li>
+                    <li>Git/TFS/Subversion</li>
                     <li>MJML</li>
                     <li>jQuery</li>
                     <li>Bootstrap</li>
