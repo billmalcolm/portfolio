@@ -39,7 +39,7 @@ function App() {
   const ProdURL = process.env.PUBLIC_URL + 'portfolio/';
 
   // Switch these when deploying
-  const baseURL = process.env.PUBLIC_URL + '/portfolio/';
+  const baseURL = process.env.PUBLIC_URL + 'portfolio/';
 
 
   return (
