@@ -11,6 +11,9 @@
         transform: translateY(0);
         animation: none;
     }
+
+    &.walk {
+    }
 }
 
 @keyframes homeIntro {
@@ -22,5 +25,15 @@
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes starWalk {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100vw);
     }
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Switch,
   Route,
   Link
@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div className="App">
-      <Router>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route path="/" render={(props) => (
             <Navigation {...props} navState={navState} btnText={btnText} handleMenu={handleMenu} />
@@ -45,7 +45,6 @@ function App() {
           </Route>
         </Switch>
         <div className="intro">
-
           <Switch>
             <Route exact path="/portfolio" render={(props) => (
               <Home {...props} launches={launches} />
@@ -63,8 +62,7 @@ function App() {
             </Route>
           </Switch>
         </div>
-
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }
